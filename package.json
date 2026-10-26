@@ -1,0 +1,10 @@
+{
+  "name": "opsflow",
+  "private": true,
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev": "npm run dev --workspace=@opsflow/api & npm run dev --workspace=@opsflow/web",
+    "build": "npm run build --workspace=@opsflow/api && npm run build --workspace=@opsflow/web",
+    "test": "npm run test --workspace=@opsflow/api"
+  }
+}
